@@ -1,6 +1,6 @@
 # getenvor
 
-Simple `GetEnvOr` function with default value support.
+Simple `Getenv` function with default value support.
 
 Usage:
 ```golang
@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-  host := GetEnvOr("HOST", "127.0.0.1") + ":" + GetEnvOr("PORT", "3000")
+  host := GetenvOr("HOST", "127.0.0.1") + ":" + GetenvOr("PORT", "3000")
 
   err := http.ListenAndServe(host, nil)
   // ...
